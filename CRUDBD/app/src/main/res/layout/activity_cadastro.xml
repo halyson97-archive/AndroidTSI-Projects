@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.halyson.crudbd.Cadastro">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/nameBuscar"
+        android:layout_alignParentEnd="true"
+        android:hint="Nome"
+        android:padding="10dp" />
+
+    <Button
+        android:text="Cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/cadastrar"
+        android:layout_alignParentEnd="true"
+        android:onClick="cadastrar" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/pass"
+        android:hint="Senha"
+        android:layout_below="@+id/nameBuscar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/pass"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cpf"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:hint="CPF" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/cpf"
+        android:layout_alignParentStart="true"
+        android:id="@+id/telefone"
+        android:layout_alignParentEnd="true"
+        android:hint="Telefone"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_below="@+id/telefone"
+        android:layout_alignParentStart="true"
+        android:id="@+id/dataNasc"
+        android:padding="10dp"
+        android:hint="Data Nascimento"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
